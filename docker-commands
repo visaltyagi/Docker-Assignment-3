@@ -1,0 +1,16 @@
+sudo docker tag assignment2 visaltyagi12/assignment3
+sudo docker login
+sudo docker push visaltyagi12/assignment3
+sudo apt-get update
+sudo apt-get install docker.io -y
+sudo su -
+systemctl status docker
+sudo docker pull visaltyagi12/assignment3
+docker images
+docker container run –itd --name testcont –p 80:80 visaltyagi12/assignment3
+docker container ls -a
+docker container exec -it testcont bash
+apt update
+apt install apache2
+service apache2 start
+service apache2 status
